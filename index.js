@@ -43,7 +43,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'What is the license you are using?',
-        choices: ['','','']
+        choices: ['MIT','GNU','Mozilla']
     },
 ];
 
@@ -57,9 +57,9 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.createPromptModule(questions)
     .then((input) =>{
-        writeToFile('README.md', markdown.generateMarkdown(inputs))
-    });
-};
+        writeToFile('README.md', markdown.generateMarkdown(input));
+    })
+}
 
 // Function call to initialize app
 init();
