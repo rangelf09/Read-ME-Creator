@@ -12,9 +12,11 @@ This application creates a README.md file. It prompts with questions and organiz
 * [Email](#email)
 * [Github](#github)
 * [License](#license)
+
 <br>
 ![](Images/Screen%20Shot%202022-09-25%20at%203.02.22%20PM.png%0D) 
 <br>
+
 ### Installation Instructions
 Must install inquirer and and run npm start or node index.js 
 <br>
